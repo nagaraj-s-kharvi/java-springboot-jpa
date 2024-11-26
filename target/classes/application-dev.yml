@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${DATABASE_HOST:pg_container}:${DATABASE_PORT:5432}/${DATABASE_NAME:sample}
+    username: ${DATABASE_USERNAME:nagaraj}
+    password: ${DATABASE_PASSWORD:Test@1234}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jpa.show-sql: true
